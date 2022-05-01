@@ -49,17 +49,15 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  #gem 'pry', '~> 0.13.1'
+  gem 'pry-rails', '~> 0.3.9'
+  gem 'require_all', '~> 3.0'
+
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
 group :development do
-  gem 'require_all', '~> 3.0'
-
-  gem 'rspec-rails', '~> 4.0.0'
-  # Factories 
-  gem 'factory_bot_rails', '~> 6.2'
-  gem 'faker', '~> 2.19'
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
@@ -72,7 +70,12 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  # tests
+  gem 'rspec-rails', '~> 4.0.0'
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  # Factories 
+  gem 'factory_bot_rails', '~> 6.2'
+  gem 'faker', '~> 2.19'
 end
