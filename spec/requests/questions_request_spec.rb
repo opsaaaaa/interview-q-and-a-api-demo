@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe QuestionsController, type: :request do
+RSpec.describe "Questions Requests", type: :request do
 
   before do 
     create_list :question_with_answers, 3, private: false
@@ -60,7 +60,7 @@ RSpec.describe QuestionsController, type: :request do
     end
 
     it "does not return privy/private questions" do  
-      get "/api/v1/question/#{Question.find_by(private: true).id}", headers: { "ACCEPT" => "application/json" }
+      get "/api/v1/question/#{Question.privy.first.id}", headers: { "ACCEPT" => "application/json" }
       expect(response).to have_http_status(:not_found)
     end
   end
