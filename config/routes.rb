@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
   
+  get 'docs/about_api'
+  get 'docs/specs'
+  get 'docs/assessment'
+  
   get '/', to: 'dashboards#home', as: 'dashboard_home'
 
   namespace :api do
     get 'questions/:id', to: 'questions#show', as: 'question'
     get 'questions', to: 'questions#index', as: 'questions'
   end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end

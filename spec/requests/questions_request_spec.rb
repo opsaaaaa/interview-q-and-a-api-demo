@@ -12,7 +12,7 @@ RSpec.describe "Questions Requests", type: :request do
     create :question_with_answers, private: true
   end
 
-  describe "GET /index" do
+  describe "GET /api/questions" do
 
     let(:body) { JSON.parse(response.body) }
     let(:body_question_ids) { body.map {|q| q['id']}}
