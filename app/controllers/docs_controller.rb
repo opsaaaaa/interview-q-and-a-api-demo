@@ -1,5 +1,5 @@
 class DocsController < ApplicationController
-  def about_api
+  def about_me
   end
 
   def specs

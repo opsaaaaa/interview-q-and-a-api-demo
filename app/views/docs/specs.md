@@ -24,7 +24,7 @@ The dash board should also display each tenant and the number of requests they h
 
 Write test as you deem them appropriate. 
 
-## Extra Specifications
+## Extra Specifications (not currently implemented)
 
 When a query parameter is provided to the questions request
 then it should filter the given results.
