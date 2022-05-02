@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  scope '/api/v1' do
+  namespace :api do
     get 'question/:id', to: 'questions#show', as: 'question'
     get 'questions', to: 'questions#index', as: 'questions'
   end

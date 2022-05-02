@@ -13,7 +13,7 @@ RSpec.describe "Questions Requests", type: :request do
     let(:body_question_ids) { body.map {|q| q['id']}}
 
     before do
-      get "/api/v1/questions", headers: { "ACCEPT" => "application/json" }
+      get "/api/questions", headers: { "ACCEPT" => "application/json" }
     end
 
     it "returns http success" do
@@ -43,7 +43,7 @@ RSpec.describe "Questions Requests", type: :request do
     let(:body) { JSON.parse(response.body) }
     
     before do
-      get "/api/v1/question/#{question.id}", headers: { "ACCEPT" => "application/json" }
+      get "/api/question/#{question.id}", headers: { "ACCEPT" => "application/json" }
     end
 
     it "returns http success" do
@@ -60,7 +60,7 @@ RSpec.describe "Questions Requests", type: :request do
     end
 
     it "does not return privy/private questions" do  
-      get "/api/v1/question/#{Question.privy.first.id}", headers: { "ACCEPT" => "application/json" }
+      get "/api/question/#{Question.privy.first.id}", headers: { "ACCEPT" => "application/json" }
       expect(response).to have_http_status(:not_found)
     end
   end

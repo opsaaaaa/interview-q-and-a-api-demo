@@ -1,4 +1,5 @@
-class QuestionsController < ApplicationController
+
+class Api::QuestionsController < ApplicationController
  
   before_action :get_question, only: [:show]
   before_action :get_questions, only: [:index]
