@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get '/', to: 'dashboards#home'
+  get '/', to: 'dashboards#home', as: 'dashboard_home'
 
   namespace :api do
     get 'questions/:id', to: 'questions#show', as: 'question'
