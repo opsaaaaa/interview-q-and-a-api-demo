@@ -42,7 +42,7 @@ RSpec.describe "Questions Requests", type: :request do
     end
   end
 
-  describe "GET /show" do
+  describe "GET /api/questions/:id" do
     
     let(:question) {create :question_with_answers, private: false }
     let(:body) { JSON.parse(response.body) }

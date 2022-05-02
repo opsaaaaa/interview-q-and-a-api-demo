@@ -4,7 +4,7 @@ My name is Sean Ferney, im a ruby on rails programer and this completed assessme
 
 I spending some time preparing to use the original assessment. I matched ruby and bundler and rails versions and fixing broken dependencies, I also experimented with updating rails. I decided it would be more effective to start from a new clean project and meet the assessment specifications with that instead. It is a 6 year old project that is more or less a empty rails app.
 
-Working with out older versions of rails takes more debugging time. Thats fine on the clock, but on my own time I would rather use an up-to-date version of rails.
+Working with older versions of rails takes more debugging time. Thats fine on the clock, but on my own time I would rather use an up-to-date version of rails.
 
 That also gave me a chance use my preferred setup, with tools like rspec and factory bot. It also avoids issues with changes to gems affecting documentation.
 

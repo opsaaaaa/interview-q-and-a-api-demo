@@ -38,7 +38,7 @@ RSpec.feature "Dashboards", type: :feature do
       is_expected.to have_content(User.count)
     end
 
-    it "displays answer count" do
+    it "displays public answer count" do
       is_expected.to have_content(Answer.published.count)
     end
   end
