@@ -1,8 +1,12 @@
 
-class Api::QuestionsController < ApplicationController
+class Api::QuestionsController < Api::ApplicationController
  
   before_action :get_question, only: [:show]
   before_action :get_questions, only: [:index]
+
+  before_action :increment_tenant_request_count
+
+  prepend_before_action :authenticate_with_api_key!
 
   def index
   end

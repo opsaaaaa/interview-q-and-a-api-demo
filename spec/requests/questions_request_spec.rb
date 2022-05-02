@@ -2,6 +2,11 @@ require 'rails_helper'
 
 RSpec.describe "Questions Requests", type: :request do
 
+  let(:headers) {{
+    :ACCEPT => "application/json", 
+    :Authorization => 'Token '+create(:tenant).api_key
+  }}
+
   before do 
     create_list :question_with_answers, 3, private: false
     create :question_with_answers, private: true
@@ -13,7 +18,7 @@ RSpec.describe "Questions Requests", type: :request do
     let(:body_question_ids) { body.map {|q| q['id']}}
 
     before do
-      get "/api/questions", headers: { "ACCEPT" => "application/json" }
+      get "/api/questions", headers: headers
     end
 
     it "returns http success" do
@@ -43,7 +48,7 @@ RSpec.describe "Questions Requests", type: :request do
     let(:body) { JSON.parse(response.body) }
     
     before do
-      get "/api/question/#{question.id}", headers: { "ACCEPT" => "application/json" }
+      get "/api/questions/#{question.id}", headers: headers
     end
 
     it "returns http success" do
@@ -60,7 +65,7 @@ RSpec.describe "Questions Requests", type: :request do
     end
 
     it "does not return privy/private questions" do  
-      get "/api/question/#{Question.privy.first.id}", headers: { "ACCEPT" => "application/json" }
+      get "/api/questions/#{Question.privy.first.id}", headers: headers
       expect(response).to have_http_status(:not_found)
     end
   end
