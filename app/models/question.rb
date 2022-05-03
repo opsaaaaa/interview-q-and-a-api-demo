@@ -6,4 +6,6 @@ class Question < ActiveRecord::Base
   scope :published, -> { where(private: false) } 
   scope :privy, -> { where(private: true) } 
   
+  paginates_per 5
+
 end

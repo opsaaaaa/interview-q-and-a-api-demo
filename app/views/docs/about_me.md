@@ -14,7 +14,7 @@ That also gave me a chance use my preferred setup, with tools like rspec and fac
 
 I tend to be a TDD oriented programer. I wrote most of the project using tests before I booted the rails server. Making requests with postman has always felt inconvenient to me. When I am writing an API I prefer to use request specs fist.
 
-I have worked with Oauth user authentication before but this was my first time implementing api_key based authentication. I think it provides a suitable level of security for a read-only api. However I would want to read more about the security of the approach before using it in writeable api requests. 
+I have worked with Oauth user authentication before but this was my first time implementing token api_key based authentication. I think it provides a suitable level of security for a read-only api. However I would want to read more about the security of the approach before using it for writeable api requests or any apis dealing with potentially sensitive data.
 
 While it seemed unneeded for the assessment, In production I would associate api_keys/tenants with specific users.
 

@@ -7,4 +7,7 @@ class Api::ApplicationController < ActionController::API
     render json: { error: e.message }, status: :not_found
   end
 
+  def render_no_content_if_blank obj
+    render status: :no_content if obj.blank?
+  end
 end
