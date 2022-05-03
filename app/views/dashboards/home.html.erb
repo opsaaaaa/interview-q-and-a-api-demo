@@ -1,0 +1,29 @@
+<h1>Q&A API Dashboard</h1>
+
+<section class="stats">
+  <h2>Stats</h2>
+  <div class="hbox text-center">
+    <% @stats.each do |title, value| %>
+      <div class="vbox">
+        <span class="label"><%= title.to_s.titleize %></span>
+        <span class="big-stat"><%= value %></span>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+<section class="tenants">
+  <div class="hbox align-items-base">
+    <h2>Tenants</h2>
+    <span>Request Count</span>
+  </div>
+
+  <div class="vbox">
+    <% @tenants.each do |t| %>
+      <div class="hbox">
+        <span class="name"><%= t.name %></span>
+        <span class="request-count"><%= t.request_count %></span>
+      </div>
+    <% end %>
+  </div>
+</section>

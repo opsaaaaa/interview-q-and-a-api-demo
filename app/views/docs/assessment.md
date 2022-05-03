@@ -1,17 +1,10 @@
 
 
-My name is Sean Ferney. Im a ruby on rails programer and this completed assessment is my work.
-
-I spent some time preparing to use the original assessment. I matched ruby, bundler, and rails versions. I fixed some broken dependencies. I also experimented with updating rails. I decided it would be more effective to start from a new clean project and meet the assessment specifications with that instead. It is a 6 year old project that is more or less an empty rails app.
-
-Working with older versions of rails takes more debugging time. Thats fine on the clock, but on my own time I would rather use an up-to-date version of rails.
-
-That also gave me a chance use my preferred setup, with tools like rspec and factory bot. It also avoids issues with changes to gems affecting documentation.
-
-The following is the assessment readme as specified on github at [Abbott-Unlimited/rails-interview-project](https://github.com/Abbott-Unlimited/rails-interview-project/blob/master/README.md)
+This is the assessment readme as specified on github at [Abbott-Unlimited/rails-interview-project](https://github.com/Abbott-Unlimited/rails-interview-project/blob/master/README.md)
 
 
 # Kaleo Rails Engineer Candidate Interview Project
+
 
 Thanks for taking the time to complete this exercise. We're excited that you're considering joining our amazing team.
 
@@ -53,8 +46,7 @@ To make sure it's all working,
 
 `rails s`
 
-Run the tests with rspec
-`rspec`
+You should see this same information.
 
 ## Submitting your project
 
