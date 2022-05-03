@@ -1,7 +1,6 @@
 
 class Api::QuestionsController < Api::ApplicationController
  
-  before_action :get_page, only: [:index]
   before_action :get_question, only: [:show]
   before_action :get_questions, only: [:index]
 
@@ -17,10 +16,6 @@ class Api::QuestionsController < Api::ApplicationController
   end
 
   private
-
-  def get_page
-    @page = params[:page] || 1
-  end
 
   def get_questions
     @questions = Question.published.includes(:user, {answers: [:user]}).order(:title).page(params[:page]) 
