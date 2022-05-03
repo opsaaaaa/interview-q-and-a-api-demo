@@ -53,7 +53,8 @@ To make sure it's all working,
 
 `rails s`
 
-You should see this same information.
+Run the tests with rspec
+`rspec`
 
 ## Submitting your project
 
