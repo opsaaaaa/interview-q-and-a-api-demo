@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get 'docs/about_me'
+  get 'docs/notes'
   get 'docs/specs'
   get 'docs/assessment'
   

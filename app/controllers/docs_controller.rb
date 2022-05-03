@@ -1,5 +1,5 @@
 class DocsController < ApplicationController
-  def about_me
+  def notes
   end
 
   def specs
