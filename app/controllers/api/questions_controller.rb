@@ -15,6 +15,11 @@ class Api::QuestionsController < Api::ApplicationController
   def show
   end
 
+  def search
+    @questions = Question.search(params[:q]).page(params[:page])
+    render_no_content_if_blank @questions
+  end
+
   private
 
   def get_questions

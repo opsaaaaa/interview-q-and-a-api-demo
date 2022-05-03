@@ -1,6 +1,7 @@
 
 json.count @questions.count
 json.total Question.published.count
+json.pages @questions.total_pages
 json._embedded do
   json.questions do
     json.array! @questions, partial: "api/questions/question", as: :question, cached: true

@@ -26,14 +26,12 @@ The dash board should also display each tenant and the number of requests they h
 The questions index should be paginated.
 The response also should include links to previous and next pages
 
+A tenant should be able to search questions.
+Their query should filter by either the questions.title or an associated answers.body
+If no results are found then it should return an appropriate status code.
 
 
 ## Extra Specifications (not currently implemented)
-
-When a query parameter is provided to the questions request
-then it should filter the given results by the question title and answers body.
-
-If no results are found then it should return an appropriate status code.
 
 When a Tenant reaches 100 requests within 24 hours, 
 then throttle that tenant to 1 request per 10 seconds.

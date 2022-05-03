@@ -8,4 +8,12 @@ class Question < ActiveRecord::Base
   
   paginates_per 5
 
+  def self.search q
+    Question.published
+      .includes(:user, {answers: [:user]})
+      .where("answers.body LIKE :q OR title LIKE :q", q: '%'+q+'%')
+      .references(:answers)
+      .distinct
+  end
+
 end
