@@ -1,6 +1,6 @@
 # About Me
 
-My name is Sean Ferney, im a ruby on rails programer and this completed assessment is my work.
+My name is Sean Ferney. Im a ruby on rails programer and this completed assessment is my work.
 
 ## Links
 
@@ -11,7 +11,7 @@ You can find the pull request to review this code assessment here [interview-q-a
 
 ## Why use a new project?
 
-I spending some time preparing to use the original assessment. I matched ruby and bundler and rails versions and fixing broken dependencies, I also experimented with updating rails. I decided it would be more effective to start from a new clean project and meet the assessment specifications with that instead. It is a 6 year old project that is more or less a empty rails app.
+I spent some time preparing to use the original assessment. I matched ruby, bundler, and rails versions. I fixed some broken dependencies. I also experimented with updating rails. I decided it would be more effective to start from a new clean project and meet the assessment specifications with that instead. It is a 6 year old project that is more or less an empty rails app.
 
 Working with older versions of rails takes more debugging time. Thats fine on the clock, but on my own time I would rather use an up-to-date version of rails.
 
@@ -25,9 +25,9 @@ I have worked with Oauth user authentication before but this was my first time i
 
 While it seemed unneeded for the assessment, In production I would associate api_keys/tenants with specific users.
 
-Before I add pagination to the questions index, I decided it would be a good idea to follow a proper API specification. I settled on RESTful HAL specification for its simplicity.
+Before I added pagination, I decided it would be a good idea to follow a proper API specification. I settled on RESTful HAL specification for its simplicity.
 
-In a production app I would use elasticsearch or something similar to take advantage of the efficiency from using a search index and the ability to sort results by relevance. However for the fun of it I wanted to try searching searching `questions.title`'s and `answer.body`'s with joins tables.
+In a production app I would use elasticsearch or something similar. That would have the efficiency from using a search index and the ability to sort results by relevance. However for the fun of it, I wanted to try searching searching `questions.title`'s and `answer.body`'s with joins tables.
 I decided to create a separate endpoint for searching questions, instead of supporting a query on the questions index. 
 
 I decided not to implement the request throttling feature. 

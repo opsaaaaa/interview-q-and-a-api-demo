@@ -1,8 +1,8 @@
 
 
-My name is Sean Ferney, im a ruby on rails programer and this completed assessment is my work.
+My name is Sean Ferney. Im a ruby on rails programer and this completed assessment is my work.
 
-I spending some time preparing to use the original assessment. I matched ruby and bundler and rails versions and fixing broken dependencies, I also experimented with updating rails. I decided it would be more effective to start from a new clean project and meet the assessment specifications with that instead. It is a 6 year old project that is more or less a empty rails app.
+I spent some time preparing to use the original assessment. I matched ruby, bundler, and rails versions. I fixed some broken dependencies. I also experimented with updating rails. I decided it would be more effective to start from a new clean project and meet the assessment specifications with that instead. It is a 6 year old project that is more or less an empty rails app.
 
 Working with older versions of rails takes more debugging time. Thats fine on the clock, but on my own time I would rather use an up-to-date version of rails.
 
