@@ -21,6 +21,12 @@ The dashboard should display: the number of users, the number of public question
 
 The dash board should also display each tenant and the number of requests they have made.
 
+## Extra Specifications
+
+The questions index should be paginated.
+The response also should include links to previous and next pages
+
+
 
 ## Extra Specifications (not currently implemented)
 

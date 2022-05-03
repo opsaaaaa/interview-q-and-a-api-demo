@@ -18,6 +18,9 @@ I have worked with Oauth user authentication before but this was my first time i
 
 While it seemed unneeded for the assessment, In production I would associate api_keys/tenants with specific users.
 
+Before I add pagination to the questions index, I decided it would be a good idea to follow a proper API specification. I settled on RESTful HAL specification for its simplicity.
+
+
 
 
 ## Links
